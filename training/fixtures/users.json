@@ -1,0 +1,32 @@
+[
+    {
+      "model": "training.user",
+      "pk": 1,
+      "fields": {
+        "username": "admin",
+        "password": "pbkdf2_sha256$260000$UFlPwo7ntO9yZtdOQ0QReu$IljAOYhCO3JDCa9Mn6PH0IevW2iDDvEbozLrFy2zIfw=",
+        "is_superuser": true,
+        "is_staff": true,
+        "role": "admin"
+      }
+    },
+    {
+      "model": "training.user",
+      "pk": 2,
+      "fields": {
+        "username": "trainer1",
+        "password": "pbkdf2_sha256$260000$UFlPwo7ntO9yZtdOQ0QReu$IljAOYhCO3JDCa9Mn6PH0IevW2iDDvEbozLrFy2zIfw=",
+        "role": "trainer"
+      }
+    },
+    {
+      "model": "training.user",
+      "pk": 3,
+      "fields": {
+        "username": "student1",
+        "password": "pbkdf2_sha256$260000$UFlPwo7ntO9yZtdOQ0QReu$IljAOYhCO3JDCa9Mn6PH0IevW2iDDvEbozLrFy2zIfw=",
+        "role": "student"
+      }
+    }
+  ]
+  
