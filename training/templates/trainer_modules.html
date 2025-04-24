@@ -1,0 +1,38 @@
+<!-- dashboard for trainer to manage assigned modules -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Trainer Modules</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light py-4">
+
+<div class="container mt-5">
+    <div class="d-flex justify-content-between align-items-center mb-2">
+        <h2 class="fw-bold">My Assigned Modules</h2>
+        <a href="/logout/" class="btn btn-outline-danger">Logout</a>
+    </div>
+
+    <div class="mb-4 d-flex flex-wrap gap-2">
+        <a href="/enroll-student/" class="btn btn-success">Enroll Student</a>
+        <a href="/remove-student/" class="btn btn-danger">Remove Student</a>
+    </div>
+
+    {% for assignment in assignments %}
+        <div class="card shadow-sm mb-3">
+            <div class="card-body">
+                <h5 class="card-title">{{ assignment.module.title }}</h5>
+                <p class="card-text">{{ assignment.module.code }} - {{ assignment.module.description }}</p>
+                <a href="/trainer-module/{{ assignment.module.id }}" class="btn btn-primary">View</a>
+                <a href="/update-notes/{{ assignment.module.id }}/" class="btn btn-secondary">Update Notes</a>
+            </div>
+        </div>
+    {% empty %}
+        <p class="text-muted">No modules assigned.</p>
+    {% endfor %}
+</div>
+
+</body>
+</html>

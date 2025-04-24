@@ -1,0 +1,21 @@
+[
+    {
+      "model": "training.module",
+      "pk": 1,
+      "fields": {
+        "title": "Intro to Agriculture",
+        "description": "Basics of soil, water, and crop growth.",
+        "notes": "Bring notebook and gloves."
+      }
+    },
+    {
+      "model": "training.module",
+      "pk": 2,
+      "fields": {
+        "title": "Sustainable Farming",
+        "description": "Organic farming and sustainability practices.",
+        "notes": "Video link included in notes."
+      }
+    }
+  ]
+  

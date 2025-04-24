@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Self Enroll</title>
+</head>
+<body>
+  <h2>Enroll in a Module</h2>
+  <form method="post">
+    {% csrf_token %}
+    <label>Select a module:</label>
+    <select name="module">
+      {% for module in modules %}
+        <option value="{{ module.id }}">{{ module.title }}</option>
+      {% endfor %}
+    </select>
+    <button type="submit">Enroll</button>
+  </form>
+</body>
+</html>

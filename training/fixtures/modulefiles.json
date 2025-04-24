@@ -1,0 +1,14 @@
+[
+    {
+      "model": "training.modulefile",
+      "pk": 1,
+      "fields": {
+        "module": 1,
+        "week": 1,
+        "title": "Week 1 Notes",
+        "file": "module_files/notes_week1.pdf",
+        "uploaded_at": "2025-04-20T10:00:00Z"
+      }
+    }
+  ]
+  

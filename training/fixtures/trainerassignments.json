@@ -1,0 +1,11 @@
+[
+    {
+      "model": "training.trainerassignment",
+      "pk": 1,
+      "fields": {
+        "user": 2,
+        "module": 1
+      }
+    }
+  ]
+  
